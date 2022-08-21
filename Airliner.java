@@ -9,7 +9,9 @@ public class Airliner {
 
 
     public static void main(String[] args) {
-        // write your code here
+        // create a (While) loop menu with exit parameter
+        // or
+        // create a menu method with the above
 
 
     }
@@ -72,6 +74,9 @@ public class Airliner {
                 priceOfTicket = 80.00;
             }
         }
+        System.out.println("Ticket Price: $" + priceOfTicket);
+        // now update the array if the ticket has been purchased, the minus one is because arrays start at 0
+        airlinerDeckSeats[seatRow - 1][seatNumber - 1] = 'T';
     }
 
 }
